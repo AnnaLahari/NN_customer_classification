@@ -14,7 +14,8 @@ You are required to help the manager to predict the right group of the new custo
 
 ## Neural Network Model
 
-<img width="626" height="799" alt="image" src="https://github.com/user-attachments/assets/a9260af2-d2f0-425c-9674-eb559795bb8c" />
+
+<img width="798" height="737" alt="image" src="https://github.com/user-attachments/assets/82afc512-c560-4a7a-9771-bc26c913d0fb" />
 
 
 ## DESIGN STEPS
@@ -46,7 +47,7 @@ Split the dataset into training and testing sets.
 
 ### STEP 7:
 
-Define the neural network architecture (64 → 32 → 16 → 8 → 4).
+Define the neural network architecture .
 
 ### STEP 8:
 
@@ -64,20 +65,21 @@ Evaluate the model using accuracy, confusion matrix, and classification report.
 ### Register Number: 212223230111
 
 ```python
+
 class PeopleClassifier(nn.Module):
     def __init__(self, input_size):
         super(PeopleClassifier, self).__init__()
-        self.fc1 = nn.Linear(input_size,30)
-        self.fc2 = nn.Linear(30,14)
-        self.fc3 = nn.Linear(14,6)
-        self.fc4 = nn.Linear(6,4)
+        self.fc1 = nn.Linear(input_size, 32)
+        self.fc2 = nn.Linear(32, 20)
+        self.fc3 = nn.Linear(20, 16)
+        self.fc4 = nn.Linear(16, 4)
 
-    def forward(self,x):
-      x = F.relu(self.fc1(x))
-      x = F.relu(self.fc2(x))
-      x = F.relu(self.fc3(x))
-      x = self.fc4(x)
-      return x
+    def forward(self, x):
+        x=F.relu(self.fc1(x))
+        x=F.relu(self.fc2(x))
+        x=F.relu(self.fc3(x))
+        x=self.fc4(x)
+        return x
 
 ```
 ```python
@@ -111,19 +113,20 @@ def train_model(model, train_loader,criterion,optimizer,epochs):
 
 ### Confusion Matrix
 
-<img width="685" height="567" alt="image" src="https://github.com/user-attachments/assets/52978871-f027-4773-b029-740d34d2f858" />
-
+<img width="664" height="559" alt="image" src="https://github.com/user-attachments/assets/9f3fff5c-7b1b-4f28-9832-87e5891522d2" />
 
 
 ### Classification Report
 
-<img width="1390" height="582" alt="image" src="https://github.com/user-attachments/assets/180e9584-95a1-44fe-a19d-9d3c71563cf2" />
+<img width="540" height="436" alt="image" src="https://github.com/user-attachments/assets/754410b3-3447-4238-8192-1096c3c77b12" />
 
 
 
 ### New Sample Data Prediction
 
-<img width="373" height="105" alt="image" src="https://github.com/user-attachments/assets/5a6ff0ae-8567-4fdd-b87c-86e072158c42" />
+<img width="351" height="103" alt="image" src="https://github.com/user-attachments/assets/ad50184f-c561-476a-91af-72e5d73b7a42" />
+
+
 
 
 ## RESULT

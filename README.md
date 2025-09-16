@@ -128,6 +128,7 @@ def train_model(model, train_loader,criterion,optimizer,epochs):
 
 
 
+<img width="353" height="96" alt="image" src="https://github.com/user-attachments/assets/2f5d6d01-4b42-4b00-9611-af26e78ebf9a" />
 
 
 

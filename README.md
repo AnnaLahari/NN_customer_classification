@@ -20,35 +20,43 @@ You are required to help the manager to predict the right group of the new custo
 ## DESIGN STEPS
 
 ### STEP 1:
-Write your own steps
+
+Import the required libraries for data handling and neural networks.
 
 ### STEP 2:
-Model Design:
 
-Input Layer: Number of neurons = features.
-
-Hidden Layers: 2 layers with ReLU activation.
-
-Output Layer: 4 neurons (segments A, B, C, D) with softmax activation.
+Load the dataset and explore its structure.
 
 ### STEP 3:
 
-Model Compilation: Use categorical crossentropy loss, Adam optimizer, and track accuracy.
+Clean the dataset and handle missing values if present.
 
 ### STEP 4:
 
-Training: Train with early stopping, batch size (e.g., 32), and suitable epochs.
-
+Encode categorical variables into numerical format.
 
 ### STEP 5:
 
-Evaluation: Assess using accuracy, confusion matrix, precision, and recall.
+Normalize or scale the numerical features.
 
 
 ### STEP 6:
 
-Optimization: Tune hyperparameters (layers, neurons, learning rate, batch size).
+Split the dataset into training and testing sets.
 
+### STEP 7:
+
+Define the neural network architecture (64 → 32 → 16 → 8 → 4).
+
+### STEP 8:
+
+Select CrossEntropyLoss as the loss function and Adam as the optimizer.
+
+### STEP 9:
+Train the model using forward pass, loss calculation, backpropagation, and weight updates.
+
+### STEP 10:
+Evaluate the model using accuracy, confusion matrix, and classification report.
 
 ## PROGRAM
 
